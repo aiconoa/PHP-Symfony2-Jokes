@@ -2,6 +2,18 @@ aiconoa_joke_list:
     pattern:  /jokes
     defaults: { _controller: AiconoaJokeBundle:Joke:list }
 
+aiconoa_joke_add:
+    pattern:  /jokes/add
+    defaults: { _controller: AiconoaJokeBundle:Joke:add }
+
+aiconoa_joke_delete:
+    pattern:  /jokes/delete/{id}
+    defaults: { _controller: AiconoaJokeBundle:Joke:delete }
+
+aiconoa_joke_edit:
+    pattern:  /jokes/edit/{id}
+    defaults: { _controller: AiconoaJokeBundle:Joke:edit }
+
 aiconoa_joke_show:
     pattern:  /jokes/{id}
     defaults: { _controller: AiconoaJokeBundle:Joke:show }

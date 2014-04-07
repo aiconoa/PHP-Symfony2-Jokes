@@ -1,0 +1,19 @@
+{% extends '::base.html.twig' %}
+
+{% block body %}
+<h1>Add a new Joke</h1>
+
+    {{ form_start(form)}}
+
+    {{ form_label(form.title) }}
+    {{ form_widget(form.title) }}
+
+    {{ form_label(form.text) }}
+    {{ form_widget(form.text) }}
+
+    {{ form_widget(form.valider) }}
+
+    <!-- if form_end disable form_rest, remember to add the CSRF token field... -->
+    {# form_row (form._token) #}
+    {{ form_end(form) }}
+{% endblock %}

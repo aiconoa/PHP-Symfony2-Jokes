@@ -2,6 +2,7 @@
 
 {% block body %}
 <h1>Jokes</h1>
+    <a href="{{ path('aiconoa_joke_add') }}" class="btn btn-success">Ajouter une blague</a>
 <table class="table">
     <thead>
     <tr>
@@ -16,7 +17,8 @@
             <a href="{{ path('aiconoa_joke_show', { 'id' : joke.id }) }}">{{ joke.title }}</a>
         </td>
         <td>
-            No action available
+            <a href="{{ path('aiconoa_joke_edit', { 'id': joke.id}) }}" class="btn btn-default">Editer</a>
+            <a href="{{ path('aiconoa_joke_delete', { 'id': joke.id}) }}" class="btn btn-warning">Supprimer</a>
         </td>
     </tr>
     {% endfor %}

@@ -21,20 +21,28 @@ class DoctrineJokeService implements JokeService {
      */
     public function findAllJokes($offset = null, $limit = null, $order = null)
     {
-        $repository = $this->doctrine->getEntityManager()->getRepository('AiconoaJokeBundle:Joke');
+        $repository = $this->doctrine->getManager()->getRepository('AiconoaJokeBundle:Joke');
         return $repository->findAll();
     }
 
     public function findJoke($id)
     {
-        $repository = $this->doctrine->getEntityManager()->getRepository('AiconoaJokeBundle:Joke');
+        $repository = $this->doctrine->getManager()->getRepository('AiconoaJokeBundle:Joke');
         return $repository->find((int) $id);
     }
 
     public function createOrUpdateJoke(Joke $joke)
     {
-        //si id == null
-        // else
+        $em = $this->doctrine->getManager();
+        if($joke->getId() == null) {
+            $em->persist($joke);
+            $em->flush();
+        } else {
+            $joke = $em->merge($joke);
+            $em->flush();
+        }
+
+        return $joke;
         // else throw new \Exception('Can not update Joke: id does not exist');
 
     }
@@ -44,6 +52,10 @@ class DoctrineJokeService implements JokeService {
      */
     public function deleteJoke($id)
     {
+        $em = $this->doctrine->getManager();
+        $joke = $em->getRepository('AiconoaJokeBundle:Joke')->find($id);
+        $em->remove($joke);
+        $em->flush();
     }
 
 } 
