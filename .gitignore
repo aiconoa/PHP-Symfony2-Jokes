@@ -1,3 +1,11 @@
+._*
+.~lock.*
+.buildpath
+.DS_Store
+.idea
+.project
+.settings
+composer.lock
 /web/bundles/
 /src/Acme
 /app/bootstrap.php.cache
