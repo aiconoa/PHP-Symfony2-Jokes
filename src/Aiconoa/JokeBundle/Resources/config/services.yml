@@ -1,0 +1,5 @@
+services:
+    aiconoa_joke.jokeservice:
+        #class: Aiconoa\JokeBundle\Service\MockJokeService
+        class: Aiconoa\JokeBundle\Service\DoctrineJokeService
+        arguments: [@doctrine]

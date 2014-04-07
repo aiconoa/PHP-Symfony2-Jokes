@@ -1,0 +1,7 @@
+aiconoa_joke_list:
+    pattern:  /jokes
+    defaults: { _controller: AiconoaJokeBundle:Joke:list }
+
+aiconoa_joke_show:
+    pattern:  /jokes/{id}
+    defaults: { _controller: AiconoaJokeBundle:Joke:show }

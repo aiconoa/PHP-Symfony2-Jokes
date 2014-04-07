@@ -1,0 +1,16 @@
+body {
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.navbar-brand img {
+    height:20px;
+}
+
+#slogan {
+    font-family: 'Love Ya Like A Sister', cursive;
+    margin-top:30px;
+    font-size:48px;
+    line-height:60px;
+    text-align:center;
+}

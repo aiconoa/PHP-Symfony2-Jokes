@@ -1,0 +1,7 @@
+aiconoa_joke:
+    resource: "@AiconoaJokeBundle/Resources/config/routing.yml"
+    prefix:   /
+
+aiconoa_app:
+    resource: "@AiconoaAppBundle/Resources/config/routing.yml"
+    prefix:   /

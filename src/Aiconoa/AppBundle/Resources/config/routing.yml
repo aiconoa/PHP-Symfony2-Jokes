@@ -1,0 +1,7 @@
+aiconoa_app_pages:
+    resource: "Aiconoa\AppBundle\Controller\DefaultController"
+    type:     annotation
+
+#aiconoa_sf2_demo_app_homepage:
+#    pattern:  /
+#    defaults: { _controller: AiconoaSF2DemoAppBundle:Default:index }

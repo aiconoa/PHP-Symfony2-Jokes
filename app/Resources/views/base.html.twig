@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        {% block stylesheets %}{% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('bundles/aiconoaapp/images/favicon.ico') }}" />
+        <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="/bundles/aiconoaapp/css/layout.css"/>
+        <link href='http://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="{{ path('aiconoa_app_home') }}"><img src="{{ asset('bundles/aiconoaapp/images/icon_31242_white.png') }}" alt="HahaHihiHoho"/>&nbsp;HahaHihiHoho</a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="{{ path('aiconoa_app_home') }}">Home</a></li>
+                    <li class="active"><a href="{{ path('aiconoa_joke_list') }}">Blagues</a></li>
+                    <li class="active"><a href="{{ path('aiconoa_app_page', { 'page' : 'credits'}) }}">Crédits</a></li>
+                    <li class="active"><a href="{{ path('aiconoa_app_page', { 'page' : 'about'}) }}">À propos</a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                {% block body %}{% endblock %}
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+    <footer>
+        <hr>
+        HahaHihiHoho
+        <p>&copy; <?php echo date('Y') == 2014 ? date('Y') : "2014 - " . date('Y') ?> by <a href="http://www.aiconoa.com">Aiconoa</a>. All rights reserved.</p>
+    </footer>
+            </div>
+        </div>
+    </div>
+    {% block javascripts %}{% endblock %}
+    </body>
+</html>

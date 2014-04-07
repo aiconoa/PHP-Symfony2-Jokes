@@ -1,0 +1,7 @@
+parameters:
+#    aiconoa_app.example.class: Aiconoa\AppBundle\Example
+
+services:
+#    aiconoa_app.example:
+#        class: %aiconoa_app.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

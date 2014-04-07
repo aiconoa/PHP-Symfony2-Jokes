@@ -1,0 +1,25 @@
+{% extends '::base.html.twig' %}
+
+{% block body %}
+<h1>Jokes</h1>
+<table class="table">
+    <thead>
+    <tr>
+        <th>Title</th>
+        <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for joke in jokes %}
+    <tr>
+        <td>
+            <a href="{{ path('aiconoa_joke_show', { 'id' : joke.id }) }}">{{ joke.title }}</a>
+        </td>
+        <td>
+            No action available
+        </td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
