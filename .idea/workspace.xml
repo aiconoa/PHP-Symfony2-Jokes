@@ -23,48 +23,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="JokeVoter.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Aiconoa/JokeBundle/Voter/JokeVoter.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="26" selection-start="828" selection-end="828" vertical-scroll-proportion="29.806452" vertical-offset="1452" max-vertical-offset="2156">
-              <folding>
-                <element signature="e#44#115#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Joke.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Aiconoa/JokeBundle/Entity/Joke.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="48" selection-start="711" selection-end="711" vertical-scroll-proportion="-11.580646" vertical-offset="411" max-vertical-offset="2794">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="JokeController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Aiconoa/JokeBundle/Controller/JokeController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="70" selection-start="1090" selection-end="1090" vertical-scroll-proportion="20.67742" vertical-offset="1411" max-vertical-offset="2354">
+            <state line="87" column="78" selection-start="2898" selection-end="2937" vertical-scroll-proportion="-10.548388" vertical-offset="1477" max-vertical-offset="2354">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.html.twig" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="base.html.twig" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="66" selection-start="2889" selection-end="2889" vertical-scroll-proportion="0.6340956" vertical-offset="971" max-vertical-offset="1518">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="services.yml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Aiconoa/JokeBundle/Resources/config/services.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="44" selection-start="269" selection-end="269" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="352">
+            <state line="45" column="10" selection-start="2438" selection-end="2438" vertical-scroll-proportion="-1.548387" vertical-offset="942" max-vertical-offset="1518">
               <folding />
             </state>
           </provider>
@@ -73,7 +44,36 @@
       <file leaf-file-name="list.html.twig" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Aiconoa/JokeBundle/Resources/views/Joke/list.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="90" selection-start="424" selection-end="424" vertical-scroll-proportion="-4.774194" vertical-offset="204" max-vertical-offset="704">
+            <state line="20" column="78" selection-start="599" selection-end="599" vertical-scroll-proportion="-14.193548" vertical-offset="0" max-vertical-offset="748">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JokeActionHelper.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Aiconoa/JokeBundle/Extensions/Twig/JokeActionHelper.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="40" column="137" selection-start="1036" selection-end="1036" vertical-scroll-proportion="0.3888889" vertical-offset="546" max-vertical-offset="1584">
+              <folding>
+                <element signature="e#135#172#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="services.yml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Aiconoa/JokeBundle/Resources/config/services.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="24" selection-start="523" selection-end="523" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="528">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JokeVoter.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Aiconoa/JokeBundle/Voter/JokeVoter.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="85" column="46" selection-start="2902" selection-end="2902" vertical-scroll-proportion="-29.096775" vertical-offset="880" max-vertical-offset="2156">
               <folding />
             </state>
           </provider>
@@ -157,12 +157,13 @@
         <option value="$PROJECT_DIR$/src/Aiconoa/UserBundle/Resources/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/Aiconoa/AppBundle/Resources/views/Secured/login.html.twig" />
         <option value="$PROJECT_DIR$/src/Aiconoa/JokeBundle/Entity/Joke.php" />
-        <option value="$PROJECT_DIR$/src/Aiconoa/JokeBundle/Resources/views/Joke/list.html.twig" />
-        <option value="$PROJECT_DIR$/src/Aiconoa/JokeBundle/Resources/config/services.yml" />
-        <option value="$PROJECT_DIR$/src/Aiconoa/JokeBundle/Voter/JokeVoter.php" />
         <option value="$PROJECT_DIR$/src/Aiconoa/JokeBundle/Controller/JokeController.php" />
         <option value="$PROJECT_DIR$/src/Aiconoa/JokeBundle/Resources/views/Joke/addOrEdit.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
+        <option value="$PROJECT_DIR$/src/Aiconoa/JokeBundle/Resources/config/services.yml" />
+        <option value="$PROJECT_DIR$/src/Aiconoa/JokeBundle/Voter/JokeVoter.php" />
+        <option value="$PROJECT_DIR$/src/Aiconoa/JokeBundle/Resources/views/Joke/list.html.twig" />
+        <option value="$PROJECT_DIR$/src/Aiconoa/JokeBundle/Extensions/Twig/JokeActionHelper.php" />
       </list>
     </option>
   </component>
@@ -298,15 +299,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Joke" />
+              <option name="myItemId" value="Voter" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -333,6 +326,66 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PHP-Symfony2-Jokes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PHP-Symfony2-Jokes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Aiconoa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JokeBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PHP-Symfony2-Jokes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PHP-Symfony2-Jokes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Aiconoa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JokeBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Extensions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Twig" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -450,12 +503,12 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959612" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Framework" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32956383" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24555735" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14705883" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2536349" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20278637" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.58540374" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2631579" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1996904" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -465,6 +518,28 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15634675" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Framework" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32956383" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20278637" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.58540374" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959612" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2536349" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1996904" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -481,7 +556,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="19" />
+      <option name="time" value="21" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -587,13 +662,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Aiconoa/JokeBundle/Resources/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="98" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="528">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Acme/DemoBundle/Controller/SecuredController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="0" selection-start="46" selection-end="388" vertical-scroll-proportion="-2.8387096" vertical-offset="0" max-vertical-offset="1672">
@@ -635,7 +703,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="28" column="49" selection-start="1076" selection-end="1076" vertical-scroll-proportion="0.7668845" vertical-offset="264" max-vertical-offset="1386">
           <folding>
-            <element signature="e#45#100#0" expanded="true" />
+            <element signature="e#45#100#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -644,7 +712,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="32" column="61" selection-start="689" selection-end="689" vertical-scroll-proportion="1.4915254" vertical-offset="0" max-vertical-offset="1738">
           <folding>
-            <element signature="e#45#100#0" expanded="true" />
+            <element signature="e#45#100#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -667,7 +735,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="7" selection-start="445" selection-end="445" vertical-scroll-proportion="0.62309366" vertical-offset="0" max-vertical-offset="1144">
           <folding>
-            <element signature="e#48#93#0" expanded="true" />
+            <element signature="e#48#93#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -697,37 +765,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="0" selection-start="295" selection-end="325" vertical-scroll-proportion="-4.635714" vertical-offset="1518" max-vertical-offset="3212">
           <folding>
-            <element signature="e#126#181#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Aiconoa/JokeBundle/Resources/views/Joke/list.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="90" selection-start="424" selection-end="424" vertical-scroll-proportion="-4.774194" vertical-offset="204" max-vertical-offset="704">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Aiconoa/JokeBundle/Entity/Joke.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="48" selection-start="711" selection-end="711" vertical-scroll-proportion="-11.580646" vertical-offset="411" max-vertical-offset="2794">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Aiconoa/JokeBundle/Resources/config/services.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="44" selection-start="269" selection-end="269" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="352">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Aiconoa/JokeBundle/Voter/JokeVoter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="26" selection-start="828" selection-end="828" vertical-scroll-proportion="29.806452" vertical-offset="1452" max-vertical-offset="2156">
-          <folding>
-            <element signature="e#44#115#0" expanded="true" />
+            <element signature="e#126#181#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -739,17 +777,61 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Aiconoa/JokeBundle/Controller/JokeController.php">
+    <entry file="file://$PROJECT_DIR$/src/Aiconoa/JokeBundle/Entity/Joke.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="70" selection-start="1090" selection-end="1090" vertical-scroll-proportion="20.67742" vertical-offset="1411" max-vertical-offset="2354">
+        <state line="35" column="48" selection-start="711" selection-end="711" vertical-scroll-proportion="-0.23462415" vertical-offset="873" max-vertical-offset="2794">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="66" selection-start="2889" selection-end="2889" vertical-scroll-proportion="0.6340956" vertical-offset="971" max-vertical-offset="1518">
+        <state line="45" column="10" selection-start="2438" selection-end="2438" vertical-scroll-proportion="-1.548387" vertical-offset="942" max-vertical-offset="1518">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Aiconoa/JokeBundle/Resources/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="16" selection-start="100" selection-end="116" vertical-scroll-proportion="0.14193548" vertical-offset="0" max-vertical-offset="620">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Aiconoa/JokeBundle/Controller/JokeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="87" column="78" selection-start="2898" selection-end="2937" vertical-scroll-proportion="-10.548388" vertical-offset="1477" max-vertical-offset="2354">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Aiconoa/JokeBundle/Resources/config/services.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="24" selection-start="523" selection-end="523" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="528">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Aiconoa/JokeBundle/Voter/JokeVoter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="85" column="46" selection-start="2902" selection-end="2902" vertical-scroll-proportion="-29.096775" vertical-offset="880" max-vertical-offset="2156">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Aiconoa/JokeBundle/Resources/views/Joke/list.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="78" selection-start="599" selection-end="599" vertical-scroll-proportion="-14.193548" vertical-offset="0" max-vertical-offset="748">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Aiconoa/JokeBundle/Extensions/Twig/JokeActionHelper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="137" selection-start="1036" selection-end="1036" vertical-scroll-proportion="0.3888889" vertical-offset="546" max-vertical-offset="1584">
+          <folding>
+            <element signature="e#135#172#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

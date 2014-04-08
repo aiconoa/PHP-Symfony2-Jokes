@@ -4,8 +4,16 @@ services:
         class: Aiconoa\JokeBundle\Service\DoctrineJokeService
         arguments: [@doctrine]
 
-    security.access.post_voter:
+    aiconoa_joke.security.access.post_voter:
         class:      Aiconoa\JokeBundle\Voter\JokeVoter
         public:     false
         tags:
            - { name: security.voter }
+
+    aiconoa_joke.twig.extension.joke_action:
+      class: Aiconoa\JokeBundle\Extensions\Twig\JokeActionHelper
+      arguments:
+        router: "@router"
+        securityContext: "@security.context"
+      tags:
+       - { name: twig.extension }

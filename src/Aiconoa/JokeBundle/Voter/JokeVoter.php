@@ -40,9 +40,13 @@ class JokeVoter implements VoterInterface
      */
     public function vote(TokenInterface $token, $joke, array $attributes)
     {
-        // check if class of this object is supported by this voter
-        if (!$this->supportsClass(get_class($joke))) {
-            return VoterInterface::ACCESS_ABSTAIN;
+        // get current logged in user
+        $user = $token->getUser();
+
+        // make sure there is a user object (i.e. that the user is logged in)
+        // can't do nothing if no user
+        if (!$user instanceof UserInterface) {
+            return VoterInterface::ACCESS_DENIED;
         }
 
         // check if the voter is used correct, only allow one attribute
@@ -50,7 +54,7 @@ class JokeVoter implements VoterInterface
         // design your voter
         if(1 !== count($attributes)) {
             throw new InvalidArgumentException(
-                'Only one attribute is allowed for ADD or EDIT'
+                'Only one attribute is allowed for ADD, EDIT or DELETE'
             );
         }
 
@@ -62,14 +66,6 @@ class JokeVoter implements VoterInterface
             return VoterInterface::ACCESS_ABSTAIN;
         }
 
-        // get current logged in user
-        $user = $token->getUser();
-
-        // make sure there is a user object (i.e. that the user is logged in)
-        if (!$user instanceof UserInterface) {
-            return VoterInterface::ACCESS_DENIED;
-        }
-
         switch($attribute) {
             case 'add':
                     //every authenticated user can create a new joke
@@ -77,12 +73,20 @@ class JokeVoter implements VoterInterface
                 break;
 
             case 'edit':
+                // can only edit a real joke
+                if (!$this->supportsClass(get_class($joke))) {
+                    return VoterInterface::ACCESS_ABSTAIN;
+                }
                 // the author is the only one who can edit a joke
                 if ($user->getId() === $joke->getAuthor()->getId()) {
                     return VoterInterface::ACCESS_GRANTED;
                 }
                 break;
             case 'delete':
+                // can only delete a real joke
+                if (!$this->supportsClass(get_class($joke))) {
+                    return VoterInterface::ACCESS_ABSTAIN;
+                }
                 // the author is the only one who can delete a joke
                 if ($user->getId() === $joke->getAuthor()->getId()) {
                     return VoterInterface::ACCESS_GRANTED;
