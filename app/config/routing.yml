@@ -10,6 +10,7 @@ aiconoa_app:
     resource: "@AiconoaAppBundle/Resources/config/routing.yml"
     prefix:   /
 
+#SECURITY
 login:
     path:   /login
     defaults:  { _controller: AiconoaAppBundle:Secured:login }
@@ -17,3 +18,9 @@ login_check:
     path:   /login_check
 logout:
     path:   /logout
+
+#REST
+aiconoa_joke_rest :
+  type : rest
+  resource: "@AiconoaJokeBundle/Resources/config/routing_rest.yml"
+  prefix : /api

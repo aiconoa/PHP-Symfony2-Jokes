@@ -4,5 +4,24 @@
 <p id="slogan">
     Attention: <a href="{{ path('aiconoa_joke_list') }}">blagues</a> drôles inside !
 </p>
+<div class="col-xs-12 col-md-4" id="jokes">
+
 </div>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script>
+        $.get( "api/jokes.json", { order: "posted_on DESC", offset: 0, limit: 3}, function( data ) {
+            console.log(data);
+            var html = "<h3>Latest 3 jokes (jQuery calling our restful api via ajax)</h3>";
+            html += "<ul>";
+            for(var i = 0; i < data.jokes.length; i++) {
+                html += '<li>' + data.jokes[i].title + '</li>';
+            }
+            html += "</ul>";
+            $( "#jokes" ).html( html );
+        });
+    </script>
+
 {% endblock %}

@@ -19,6 +19,8 @@ class AppKernel extends Kernel
             new Aiconoa\AppBundle\AiconoaAppBundle(),
             new Aiconoa\JokeBundle\AiconoaJokeBundle(),
             new Aiconoa\UserBundle\AiconoaUserBundle(),
+            new FOS\RestBundle\FOSRestBundle(),
+            new JMS\SerializerBundle\JMSSerializerBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

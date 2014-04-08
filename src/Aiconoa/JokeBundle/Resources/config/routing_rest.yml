@@ -1,0 +1,4 @@
+jokes :
+  type: rest
+  resource: "AiconoaJokeBundle:JokeRest"
+#  name_prefix:  api_
