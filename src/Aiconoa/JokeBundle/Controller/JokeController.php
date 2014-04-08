@@ -41,38 +41,32 @@ class JokeController extends Controller
     }
 
     /**
-     * @Template()
+     * @Template("AiconoaJokeBundle:Joke:addOrEdit.html.twig")
      */
     public function addAction(Request $request)
     {
         $joke = new Joke();
-        $form = $this->buildJokeForm($joke, $this->generateUrl('aiconoa_joke_add'));
-
-        if ($request->isMethod('POST')) {
-            $form->handleRequest($request);
-
-            if ($form->isValid()) {
-                $joke = $form->getData();
-                $this->get("aiconoa_joke.jokeservice")->createOrUpdateJoke($joke);
-                return $this->redirect($this->generateUrl('aiconoa_joke_list'));
-            }
-        }
-        return array('form' => $form->createView());
+        return $this->addOrEdit($request, $joke, $this->generateUrl('aiconoa_joke_add'));
     }
 
     /**
-     * @Template("AiconoaJokeBundle:Joke:add.html.twig")
+     * @Template("AiconoaJokeBundle:Joke:addOrEdit.html.twig")
      */
     public function editAction(Request $request, $id)
     {
         $joke = $this->get("aiconoa_joke.jokeservice")->findJoke($id);
-        $form = $this->buildJokeForm($joke, $this->generateUrl('aiconoa_joke_edit', array('id' => $id)));
+        return $this->addOrEdit($request, $joke, $this->generateUrl('aiconoa_joke_edit', array('id' => $id)));
+    }
+
+    protected function addOrEdit(Request $request, $joke, $url) {
+        $form = $this->buildJokeForm($joke, $url);
 
         if ($request->isMethod('POST')) {
             $form->handleRequest($request);
 
             if ($form->isValid()) {
                 $joke = $form->getData();
+                // @Template is ignored if Response object is returned
                 $this->get("aiconoa_joke.jokeservice")->createOrUpdateJoke($joke);
                 return $this->redirect($this->generateUrl('aiconoa_joke_list'));
             }
