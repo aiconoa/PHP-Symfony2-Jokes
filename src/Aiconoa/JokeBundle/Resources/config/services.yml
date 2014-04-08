@@ -3,3 +3,9 @@ services:
         #class: Aiconoa\JokeBundle\Service\MockJokeService
         class: Aiconoa\JokeBundle\Service\DoctrineJokeService
         arguments: [@doctrine]
+
+    security.access.post_voter:
+        class:      Aiconoa\JokeBundle\Voter\JokeVoter
+        public:     false
+        tags:
+           - { name: security.voter }

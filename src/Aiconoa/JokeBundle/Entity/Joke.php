@@ -6,6 +6,7 @@ use Doctrine\ORM\Mapping as ORM;
 
 /**
  * @ORM\Entity
+ * @ORM\Table(name="joke_sf2")
  */
 class Joke {
     /**
@@ -30,7 +31,13 @@ class Joke {
      */
     private $postedOn;
 
-    //we will soon add $category and $author
+    /**
+     * fetch="EAGER" is not mandatory but in our case it will avoid us
+     * to make some more request by automatically joining with user
+     * @ORM\ManyToOne(targetEntity="Aiconoa\UserBundle\Entity\User", fetch="EAGER")
+     * @ORM\JoinColumn(name="author_id", referencedColumnName="id")
+     **/
+    private $author;
 
     /**
      * @param int $id
@@ -96,24 +103,20 @@ class Joke {
         return $this->postedOn;
     }
 
-    public function __toString()
+    /**
+     * @param mixed $user
+     */
+    public function setAuthor($author)
     {
-        return "Joke { \n"
-        . "id: " . $this->id . "\n"
-        . "title: " . $this->title . "\n"
-        . "text: " . $this->text . "\n"
-        . "}\n";
+        $this->author = $author;
     }
 
     /**
-     * @return array
+     * @return mixed
      */
-    public function getArrayCopy() {
-        return  array(
-            'id' => $this->id,
-            'title' => $this->title,
-            'text' => $this->text,
-            'posted_on' => $this->postedOn,
-        );
+    public function getAuthor()
+    {
+        return $this->author;
     }
+
 }

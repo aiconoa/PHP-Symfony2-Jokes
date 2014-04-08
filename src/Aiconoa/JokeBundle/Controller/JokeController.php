@@ -7,6 +7,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\Security\Core\Exception\AccessDeniedException;
 
 class JokeController extends Controller
 {
@@ -14,6 +15,7 @@ class JokeController extends Controller
     public function listAction()
     {
         $jokes = $this->get("aiconoa_joke.jokeservice")->findAllJokes();
+
         return $this->render(
             'AiconoaJokeBundle:Joke:list.html.twig',
             array("jokes" => $jokes)
@@ -36,6 +38,10 @@ class JokeController extends Controller
      */
     public function deleteAction($id)
     {
+        $joke = $this->get("aiconoa_joke.jokeservice")->findJoke($id);
+        if (false === $this->get('security.context')->isGranted('add', $joke)) {
+            throw new AccessDeniedException();
+        }
         $joke = $this->get("aiconoa_joke.jokeservice")->deleteJoke($id);
         return $this->redirect($this->generateUrl('aiconoa_joke_list'));
     }
@@ -45,28 +51,24 @@ class JokeController extends Controller
      */
     public function addAction(Request $request)
     {
+
+        $joke = new Joke();
         // only authors can add a new joke
-        if (false === $this->get('security.context')->isGranted('ROLE_AUTHOR')) {
+        if (false === $this->get('security.context')->isGranted('add', $joke)) {
             throw new AccessDeniedException();
         }
-        $joke = new Joke();
+
         return $this->addOrEdit($request, $joke, $this->generateUrl('aiconoa_joke_add'));
     }
 
     /**
-     * Using Security annotation is another way to secure access to a method
-     * @Security("has_role('ROLE_AUTHOR')")
      * @Template("AiconoaJokeBundle:Joke:addOrEdit.html.twig")
      */
     public function editAction(Request $request, $id)
     {
-        //TODO get the user
-        // only the joke author is authorized to edit a joke
         $joke = $this->get("aiconoa_joke.jokeservice")->findJoke($id);
-        //$user = $this->get('security.context')->getToken()->getUser();
-        // can be shortcuted to
-        $user = $this->getUser();
-        if ($joke->getAuthorId() != $user->getId()) {
+        // only authors can add a new joke
+        if (false === $this->get('security.context')->isGranted('edit', $joke)) {
             throw new AccessDeniedException();
         }
         return $this->addOrEdit($request, $joke, $this->generateUrl('aiconoa_joke_edit', array('id' => $id)));
@@ -80,6 +82,7 @@ class JokeController extends Controller
 
             if ($form->isValid()) {
                 $joke = $form->getData();
+                $joke->setAuthor($this->get('security.context')->getToken()->getUser());
                 // @Template is ignored if Response object is returned
                 $this->get("aiconoa_joke.jokeservice")->createOrUpdateJoke($joke);
                 return $this->redirect($this->generateUrl('aiconoa_joke_list'));
