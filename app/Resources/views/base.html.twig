@@ -27,7 +27,14 @@
                     <li class="active"><a href="{{ path('aiconoa_app_page', { 'page' : 'credits'}) }}">Crédits</a></li>
                     <li class="active"><a href="{{ path('aiconoa_app_page', { 'page' : 'about'}) }}">À propos</a></li>
                 </ul>
-            </div><!--/.nav-collapse -->
+                <ul class="nav navbar-nav navbar-right">
+                    {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+                        <li><a href="{{ path('logout') }}">Bonjour {{ app.user.username }} - Déconnexion</a></li>
+                    {% else %}
+                        <li><a href="{{ path('login') }}"> Se connecter</a></li>
+                    {% endif %}
+                </ul>
+            </div>
         </div>
     </nav>
     <div class="container">

@@ -45,16 +45,30 @@ class JokeController extends Controller
      */
     public function addAction(Request $request)
     {
+        // only authors can add a new joke
+        if (false === $this->get('security.context')->isGranted('ROLE_AUTHOR')) {
+            throw new AccessDeniedException();
+        }
         $joke = new Joke();
         return $this->addOrEdit($request, $joke, $this->generateUrl('aiconoa_joke_add'));
     }
 
     /**
+     * Using Security annotation is another way to secure access to a method
+     * @Security("has_role('ROLE_AUTHOR')")
      * @Template("AiconoaJokeBundle:Joke:addOrEdit.html.twig")
      */
     public function editAction(Request $request, $id)
     {
+        //TODO get the user
+        // only the joke author is authorized to edit a joke
         $joke = $this->get("aiconoa_joke.jokeservice")->findJoke($id);
+        //$user = $this->get('security.context')->getToken()->getUser();
+        // can be shortcuted to
+        $user = $this->getUser();
+        if ($joke->getAuthorId() != $user->getId()) {
+            throw new AccessDeniedException();
+        }
         return $this->addOrEdit($request, $joke, $this->generateUrl('aiconoa_joke_edit', array('id' => $id)));
     }
 

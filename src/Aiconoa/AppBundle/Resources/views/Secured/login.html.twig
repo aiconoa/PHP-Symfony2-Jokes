@@ -1,0 +1,29 @@
+{% extends '::base.html.twig' %}
+
+{% block body %}
+    <h1>Se connecter</h1>
+    {% if error %}
+        <div>{{ error.message }}</div>
+    {% endif %}
+
+<form action="{{ path('login_check') }}" method="post">
+    <label>
+        Pseudonyme :
+        <input type="text" name="_username"
+               value="{{ last_username }}" />
+    </label><br />
+
+    <label>
+        Mot de passe :
+        <input type="password" name="_password" />
+    </label><br />
+
+    <button type="submit">Connexion</button>
+</form>
+<hr/>
+<p>Essayer avec:</p>
+<ul>
+    <li>author/author</li>
+    <li>admin/admin</li>
+</ul>
+{% endblock %}

@@ -1,3 +1,7 @@
+aiconoa_user:
+    resource: "@AiconoaUserBundle/Resources/config/routing.yml"
+    prefix:   /
+
 aiconoa_joke:
     resource: "@AiconoaJokeBundle/Resources/config/routing.yml"
     prefix:   /
@@ -5,3 +9,11 @@ aiconoa_joke:
 aiconoa_app:
     resource: "@AiconoaAppBundle/Resources/config/routing.yml"
     prefix:   /
+
+login:
+    path:   /login
+    defaults:  { _controller: AiconoaAppBundle:Secured:login }
+login_check:
+    path:   /login_check
+logout:
+    path:   /logout
