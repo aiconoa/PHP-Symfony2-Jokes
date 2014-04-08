@@ -30,11 +30,6 @@ class JokeController extends Controller
         return array('joke' => $joke);
     }
 
-    public function editAction($id)
-    {
-        //TODO
-    }
-
     /**
      * no need to call for render if use the Template annotation
      * @Template()
@@ -65,13 +60,33 @@ class JokeController extends Controller
         return array('form' => $form->createView());
     }
 
+    /**
+     * @Template("AiconoaJokeBundle:Joke:add.html.twig")
+     */
+    public function editAction(Request $request, $id)
+    {
+        $joke = $this->get("aiconoa_joke.jokeservice")->findJoke($id);
+        $form = $this->buildJokeForm($joke, $this->generateUrl('aiconoa_joke_edit', array('id' => $id)));
+
+        if ($request->isMethod('POST')) {
+            $form->handleRequest($request);
+
+            if ($form->isValid()) {
+                $joke = $form->getData();
+                $this->get("aiconoa_joke.jokeservice")->createOrUpdateJoke($joke);
+                return $this->redirect($this->generateUrl('aiconoa_joke_list'));
+            }
+        }
+        return array('form' => $form->createView());
+    }
+
     protected function buildJokeForm($joke, $url)
     {
         $form = $this->createFormBuilder($joke, array(
                             'action' => $url,
                             'method' => 'POST'))
             ->add('title', 'text')
-            ->add('text', 'text')
+            ->add('text', 'textarea')
             ->add('valider', 'submit')
             ->getForm();
 
